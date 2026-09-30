@@ -1,21 +1,16 @@
-# SIT307 11.1HD – Machine Learning Research
+# SIT307 11.1HD - Machine Learning Research
 
 ## Project Overview
 
-This repository contains the implementation and experimental work for the
-SIT307 11.1HD Machine Learning Research task.
+This repository contains the implementation and experimental work for the SIT307 11.1HD Machine Learning Research task.
 
-The project reproduces and critically evaluates the machine learning methods
-presented in:
-
+The project reproduces and critically evaluates the machine learning methods presented in:
 "An efficient stacking-based ensemble technique for early heart attack prediction"
 
 The project contains two main stages:
 
-1. Reproduction and evaluation of the machine learning methods presented in
-   the selected research paper.
-2. Development and evaluation of an improved leakage-resistant stacking
-   approach based on limitations identified during the reproduction study.
+1. Reproduction and evaluation of the machine learning methods presented in the selected research paper.
+2. Development and evaluation of an improved leakage-resistant stacking approach based on limitations identified during the reproduction study.
 
 ## Dataset
 
@@ -31,15 +26,15 @@ Dataset location:
 
 ## Project Structure
 
-- `data/` – Dataset used for the experiments
-- `notebooks/` – Jupyter notebook containing the complete analysis
-- `results/figures/` – Generated figures and plots
-- `results/tables/` – Experimental result tables
-- `requirements.txt` – Required Python packages
+- `data/` - Dataset used for the experiments
+- `notebooks/` - Jupyter notebook containing the complete analysis
+- `results/figures/` - Generated figures and plots
+- `results/tables/` - Experimental result tables
+- `requirements.txt` - Required Python packages
 
 ## Work Completed
 
-### Part 1 – Reproduction
+### Part 1 - Reproduction
 
 - Reproduced six individual classifiers:
   - Logistic Regression
@@ -63,7 +58,7 @@ Dataset location:
   from appearing across training and testing data
 - Investigated inconsistencies in the published results
 
-### Part 2 – Proposed Solution
+### Part 2 - Proposed Solution
 
 A fully group-aware stacking procedure was developed in which duplicate
 feature groups are separated during both:

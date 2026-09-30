@@ -82,8 +82,22 @@ Final proposed model performance:
 - AUC: 0.9508
 
 ## Reproducing the Results
+Open the notebook:
+notebooks/SIT307_11.1HD.ipynb
 
-Install the required Python packages:
+Run all cells from top to bottom.
+The notebook reproduces the original classifiers and stacking ensemble,
+performs the duplicate and group-aware validation experiments, and implements
+the proposed fully group-aware stacking approach.
 
-```bash
-pip install -r requirements.txt
+## Key Findings
+The published stacking model reports 98.53% accuracy, while the reproduced random-split stacking model achieved 98.54%.
+However, 97.07% of the original test observations had an identical feature pattern in the training set. When identical feature groups were prevented from crossing the train-test boundary, stacking accuracy decreased to 87.92%.
+The proposed fully group-aware stacking method also achieved 87.92% accuracy and an AUC of 0.9508. Its main contribution is therefore a more rigorous and leakage-resistant evaluation procedure rather than an increase in headline
+accuracy.
+
+## Status
+Implementation, reproduction, critical analysis, and Part 2 proposed solution
+completed.
+
+

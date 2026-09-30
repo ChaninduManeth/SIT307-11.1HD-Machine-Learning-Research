@@ -29,7 +29,6 @@ Dataset location:
 - `data/` - Dataset used for the experiments
 - `notebooks/` - Jupyter notebook containing the complete analysis
 - `results/figures/` - Generated figures and plots
-- `results/tables/` - Experimental result tables
 - `requirements.txt` - Required Python packages
 
 ## Work Completed
